@@ -1,5 +1,7 @@
 #!/bin/bash
 #network info script
+#10/26/2020
+#dump network info
 
 (arp; ifconfig; hostname; route; tcptrack) | tee -a df.log                             # arp displays and modifies entries in the Address Resolution Protocol cache
                                                                                        # ifconfig is used for displaying current network configuration information
